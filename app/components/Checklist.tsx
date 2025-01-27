@@ -43,7 +43,7 @@ export default function Checklist() {
     }, []);
 
     const listItems = items.map(item => {
-        return <ChecklistItem id={item} />
+        return <ChecklistItem key={item} id={item} />
     });
     return (
         <div className="w-fit">
